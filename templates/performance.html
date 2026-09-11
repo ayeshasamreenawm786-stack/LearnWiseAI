@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Performance - LearnWise AI</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+
+<body>
+
+    <header>
+        <h1>LearnWise AI</h1>
+        <a href="{{ url_for('dashboard') }}">Dashboard</a>
+    </header>
+
+    <main>
+
+    <h2>📊 Performance</h2>
+
+    {% if performance_data %}
+
+        <section>
+
+            <h3>Overall Score</h3>
+
+            <p>
+                Score:
+                {{ performance_data["correct_count"] }}
+            </p>
+
+            <p>
+                Percentage:
+                {{ performance_data["overall_percentage"] }}%
+            </p>
+
+        </section>
+
+        <section>
+
+            <h3>Topic-wise Performance</h3>
+
+            {% for topic, data in performance_data["topic_scores"].items() %}
+
+                <p>
+                    {{ topic }}:
+                    {{ data["correct"] }}/{{ data["total"] }}
+                    — {{ data["percentage"] }}%
+                </p>
+
+            {% endfor %}
+
+        </section>
+
+    {% else %}
+
+        <p>No quiz performance available yet. Take a quiz first.</p>
+
+    {% endif %}
+
+</main>
+
+</body>
+
+</html>

@@ -1,0 +1,57 @@
+[
+    {
+        "question": "What does the acronym ICT stand for in the study material?",
+        "options": {
+            "A": "International Computer Technology",
+            "B": "Information and Communication Technology",
+            "C": "Internet Communication Technique",
+            "D": "Integrated Core Technology"
+        },
+        "answer": "B",
+        "topic": "Core Concepts"
+    },
+    {
+        "question": "Which of the following is considered an input device?",
+        "options": {
+            "A": "Printer",
+            "B": "Monitor",
+            "C": "Scanner",
+            "D": "Speaker"
+        },
+        "answer": "C",
+        "topic": "Core Concepts"
+    },
+    {
+        "question": "Which application from MS Office is best used for calculations and marks registration?",
+        "options": {
+            "A": "MS Word",
+            "B": "MS Excel",
+            "C": "PowerPoint",
+            "D": "DIKSHA"
+        },
+        "answer": "B",
+        "topic": "Digital Literacy"
+    },
+    {
+        "question": "What does OER stand for?",
+        "options": {
+            "A": "Online Educational Repository",
+            "B": "Open Educational Resources",
+            "C": "Online Evaluation Rubrics",
+            "D": "Open Exam Records"
+        },
+        "answer": "B",
+        "topic": "Learning Platforms"
+    },
+    {
+        "question": "What is the primary role of a teacher when using ICT-supported teaching and collaborative learning?",
+        "options": {
+            "A": "Facilitator",
+            "B": "Strict Inspector",
+            "C": "Data Entry Operator",
+            "D": "Software Developer"
+        },
+        "answer": "A",
+        "topic": "Classroom Integration"
+    }
+]

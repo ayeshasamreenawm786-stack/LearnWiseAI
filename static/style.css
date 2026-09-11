@@ -1,0 +1,631 @@
+/* General page styling */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5f7fb;
+    color: #1f2937;
+}
+
+/* Header */
+header {
+    background-color: #1e3a8a;
+    color: white;
+    padding: 20px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Main content */
+main {
+    max-width: 1100px;
+    margin: 50px auto;
+    padding: 0 25px;
+}
+
+/* Headings */
+h2 {
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+h3 {
+    margin-top: 0;
+}
+
+/* Sections */
+section {
+    background: white;
+    padding: 30px;
+    margin: 25px 0;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+/* Links / buttons */
+a {
+    display: inline-block;
+    background-color: #2563eb;
+    color: white;
+    padding: 12px 22px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    background-color: #1d4ed8;
+}
+
+nav {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+}
+
+nav a {
+    background-color: transparent;
+    padding: 8px 12px;
+    border-radius: 6px;
+}
+
+nav a:hover {
+    background-color: #2563eb;
+}
+
+.hero {
+    text-align: center;
+    padding: 60px 30px;
+}
+
+.hero h2 {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.features {
+    text-align: center;
+}
+
+.features > div {
+    display: inline-block;
+    width: 20%;
+    margin: 1%;
+    padding: 20px;
+    background-color: #f8fafc;
+    border-radius: 12px;
+}
+
+.features > div:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+@media (max-width: 768px) {
+    header {
+        padding: 20px;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav {
+        gap: 10px;
+    }
+
+    main {
+        margin: 30px auto;
+        padding: 0 15px;
+    }
+
+    .hero h2 {
+        font-size: 30px;
+    }
+
+    .features > div {
+        display: block;
+        width: auto;
+        margin: 15px 0;
+    }
+
+    .dashboard-cards {
+    grid-template-columns: 1fr;
+}
+}
+
+.features > div {
+    transition: 0.3s;
+}
+
+.hero a {
+    font-size: 17px;
+    padding: 14px 28px;
+}
+
+footer {
+    background-color: #1e3a8a;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+footer {
+    background-color: #1e3a8a;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+section p {
+    line-height: 1.6;
+}
+
+.dashboard-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.dashboard-cards > div {
+    padding: 25px;
+    background-color: #f8fafc;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: 0.3s;
+}
+
+.dashboard-cards > div:hover {
+    transform: translateY(-5px);
+}
+
+.dashboard-cards {
+    margin-top: 30px;
+}
+
+.dashboard-cards h3 {
+    margin-bottom: 10px;
+}
+
+.dashboard-cards p {
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.dashboard-cards a {
+    margin-top: 5px;
+     text-align: center;
+}
+
+.dashboard-cards > div {
+    min-height: 170px;
+}
+
+.dashboard-cards > div {
+    display: flex;
+    flex-direction: column;
+}
+
+.dashboard-cards h3 {
+    color: #1e3a8a;
+}
+
+.features > div {
+    border: 1px solid #d1d5db;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.09);
+}
+
+.dashboard-cards a {
+    padding: 12px;
+}
+
+.dashboard-cards {
+    row-gap: 30px;
+}
+
+.dashboard-cards p {
+    color: #4b5563;
+}
+
+.dashboard-cards > div {
+    gap: 5px;
+}
+
+.dashboard-cards a:hover {
+    transform: translateY(-2px);
+}
+
+.dashboard-cards > div {
+    border: 1px solid #e5e7eb;
+}
+
+.dashboard-cards a {
+    border-radius: 10px;
+}
+
+.dashboard-cards h3 {
+    font-size: 20px;
+}
+
+.dashboard-title {
+    color: #1e3a8a;
+}
+
+.dashboard-title {
+    margin-bottom: 10px;
+}
+
+.dashboard-cards a {
+    margin-top: auto;
+    text-align: center;
+}
+
+.ai-content {
+    line-height: 1.5;
+}
+
+.ai-content h1,
+.ai-content h2,
+.ai-content h3 {
+    margin-top: 12px;
+    margin-bottom: 5px;
+}
+
+.ai-content h1:first-child,
+.ai-content h2:first-child,
+.ai-content h3:first-child {
+    margin-top: 0;
+}
+
+.ai-content p {
+    margin-top: 3px;
+    margin-bottom: 7px;
+}
+
+.ai-content ul,
+.ai-content ol {
+    margin-top: 3px;
+    margin-bottom: 7px;
+}
+
+.ai-content li {
+    margin-bottom: 2px;
+}
+
+.ai-content table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 15px 0;
+}
+
+.ai-content th,
+.ai-content td {
+    border: 1px solid #d1d5db;
+    padding: 10px;
+    text-align: left;
+}
+
+.ai-content th {
+    background-color: #f8fafc;
+    font-weight: bold;
+}
+
+/* =====================================================
+   FINAL LEARNWISE AI UI POLISH
+   ===================================================== */
+
+/* Better sizing everywhere */
+* {
+    box-sizing: border-box;
+}
+
+/* Smooth transitions */
+a,
+button,
+input[type="submit"],
+input[type="file"] {
+    transition: 0.2s ease;
+}
+
+
+/* =====================================================
+   PROFESSIONAL BUTTONS
+   ===================================================== */
+
+button,
+input[type="submit"] {
+    border: none;
+    background: linear-gradient(135deg, #2563eb, #1d4ed8);
+    color: white;
+    padding: 12px 22px;
+    border-radius: 9px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(37, 99, 235, 0.20);
+}
+
+button:hover,
+input[type="submit"]:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 7px 16px rgba(37, 99, 235, 0.28);
+}
+
+
+/* Dashboard buttons */
+.dashboard-cards a {
+    display: block;
+    width: 100%;
+    background: linear-gradient(135deg, #2563eb, #1d4ed8);
+    color: white;
+    padding: 13px 18px;
+    border-radius: 9px;
+    text-align: center;
+    font-weight: bold;
+    text-decoration: none;
+    box-shadow: 0 4px 10px rgba(37, 99, 235, 0.18);
+}
+
+.dashboard-cards a:hover {
+    background: linear-gradient(135deg, #1d4ed8, #1e40af);
+    transform: translateY(-2px);
+}
+
+
+/* =====================================================
+   UPLOAD PAGE
+   ===================================================== */
+
+input[type="file"] {
+    width: 100%;
+    max-width: 500px;
+    padding: 12px;
+    background: #f8fafc;
+    border: 2px dashed #cbd5e1;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 12px 0 18px;
+}
+
+input[type="file"]:hover {
+    border-color: #2563eb;
+    background: #eff6ff;
+}
+
+
+/* Upload PDF button */
+form button,
+form input[type="submit"] {
+    margin-top: 5px;
+}
+
+
+/* =====================================================
+   UPLOADED PDF
+   ===================================================== */
+
+main > a[href*="uploads"] {
+    background: #eff6ff;
+    color: #1e3a8a;
+    border: 1px solid #bfdbfe;
+    padding: 12px 18px;
+    border-radius: 9px;
+}
+
+main > a[href*="uploads"]:hover {
+    background: #dbeafe;
+}
+
+
+/* =====================================================
+   CONTINUE LEARNING AREA
+   ===================================================== */
+
+.dashboard-cards {
+    margin-top: 30px;
+}
+
+.dashboard-cards > div {
+    background: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 14px;
+    padding: 25px;
+    box-shadow: 0 5px 18px rgba(15, 23, 42, 0.07);
+}
+
+.dashboard-cards > div:hover {
+    box-shadow: 0 9px 24px rgba(15, 23, 42, 0.11);
+}
+
+
+/* =====================================================
+   HEADINGS
+   ===================================================== */
+
+h2 {
+    color: #1e3a8a;
+}
+
+h3 {
+    color: #1e3a8a;
+}
+
+
+/* =====================================================
+   AI CONTENT
+   ===================================================== */
+
+.ai-content {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    border: 1px solid #e5e7eb;
+    box-shadow: 0 4px 15px rgba(15, 23, 42, 0.06);
+}
+
+
+/* =====================================================
+   FORMS / ASK AI
+   ===================================================== */
+
+textarea {
+    width: 100%;
+    min-height: 120px;
+    padding: 14px;
+    border: 1px solid #cbd5e1;
+    border-radius: 10px;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    resize: vertical;
+}
+
+textarea:focus {
+    outline: none;
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.10);
+}
+
+input[type="text"],
+input[type="email"] {
+    padding: 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus {
+    outline: none;
+    border-color: #2563eb;
+}
+
+
+/* =====================================================
+   PDF / HISTORY CARDS
+   ===================================================== */
+
+.history-card {
+    background: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    padding: 20px;
+    margin: 15px 0;
+    box-shadow: 0 4px 14px rgba(15, 23, 42, 0.06);
+}
+
+
+/* =====================================================
+   MESSAGES
+   ===================================================== */
+
+.success-message {
+    background: #ecfdf5;
+    color: #065f46;
+    border: 1px solid #a7f3d0;
+    padding: 14px 18px;
+    border-radius: 9px;
+    margin: 15px 0;
+}
+
+.error-message {
+    background: #fef2f2;
+    color: #991b1b;
+    border: 1px solid #fecaca;
+    padding: 14px 18px;
+    border-radius: 9px;
+    margin: 15px 0;
+}
+
+
+/* =====================================================
+   DELETE BUTTON
+   ===================================================== */
+
+button[type="submit"] {
+    min-width: 120px;
+}
+
+form button[onclick],
+form button.delete-button {
+    background: #dc2626;
+}
+
+form button[onclick]:hover,
+form button.delete-button:hover {
+    background: #b91c1c;
+}
+
+
+/* =====================================================
+   TABLES
+   ===================================================== */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+th {
+    background: #eff6ff;
+    color: #1e3a8a;
+}
+
+th,
+td {
+    padding: 12px;
+    border: 1px solid #e5e7eb;
+}
+
+
+/* =====================================================
+   MOBILE
+   ===================================================== */
+
+@media (max-width: 768px) {
+
+    main {
+        margin: 30px auto;
+        padding: 0 15px;
+    }
+
+    .dashboard-cards {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .dashboard-cards > div {
+        min-height: auto;
+    }
+
+    input[type="file"] {
+        max-width: 100%;
+    }
+
+    button,
+    input[type="submit"] {
+        width: 100%;
+    }
+
+    .dashboard-cards a {
+        width: 100%;
+    }
+
+    textarea {
+        min-height: 100px;
+    }
+}

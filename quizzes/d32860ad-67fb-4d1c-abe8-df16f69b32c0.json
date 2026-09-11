@@ -1,0 +1,57 @@
+[
+    {
+        "question": "What does the abbreviation ICT stand for based on the study material?",
+        "options": {
+            "A": "Information and Computer Technology",
+            "B": "Information and Communication Technology",
+            "C": "Internet and Communication Technology",
+            "D": "Integrated Computer Technology"
+        },
+        "answer": "B",
+        "topic": "Core Concepts"
+    },
+    {
+        "question": "Which of the following is considered an input device?",
+        "options": {
+            "A": "Monitor",
+            "B": "Printer",
+            "C": "Scanner",
+            "D": "Speaker"
+        },
+        "answer": "C",
+        "topic": "Core Concepts"
+    },
+    {
+        "question": "Which software application is primarily used for calculations and marks registration?",
+        "options": {
+            "A": "MS Word",
+            "B": "PowerPoint",
+            "C": "MS Excel",
+            "D": "VLC Media Player"
+        },
+        "answer": "C",
+        "topic": "Digital Literacy"
+    },
+    {
+        "question": "What is the full form of OER in educational resources?",
+        "options": {
+            "A": "Online Educational Repositories",
+            "B": "Open Educational Resources",
+            "C": "Open Electronic References",
+            "D": "Online Education Records"
+        },
+        "answer": "B",
+        "topic": "Learning Platforms"
+    },
+    {
+        "question": "What does CCE stand for in assessment and evaluation?",
+        "options": {
+            "A": "Continuous Comprehensive Evaluation",
+            "B": "Computer Controlled Education",
+            "C": "Curriculum Centered Evaluation",
+            "D": "Continuous Curriculum Engagement"
+        },
+        "answer": "A",
+        "topic": "Assessment & Evaluation"
+    }
+]

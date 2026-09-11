@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>LearnWise AI</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+    <header>
+    <h1>LearnWise AI</h1>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+        <a href="#">Login</a>
+    </nav>
+</header>
+    
+
+    <main>
+
+
+    <section class="hero">
+        <h2>Learn Smarter with LearnWise AI</h2>
+
+        <p>
+            Your AI-powered learning assistant that helps you
+            understand, practice, and improve.
+        </p>
+
+        <a href="{{ url_for('dashboard') }}">Start Learning</a>
+    </section>
+
+<section class="features">
+        
+    <h2>What can you do?</h2>
+
+    <div>
+        <h3>Learn</h3>
+        <p>Understand your uploaded study material with AI.</p>
+    </div>
+
+    <div>
+        <h3>Ask AI</h3>
+        <p>Ask questions about your study material.</p>
+    </div>
+
+    <div>
+        <h3>Quiz</h3>
+        <p>Generate MCQs and practice what you learned.</p>
+    </div>
+
+    <div>
+        <h3>Performance</h3>
+        <p>See your score and identify weak topics.</p>
+    </div>
+
+
+    </section>
+
+    </main>
+
+    <footer>
+        <p>© 2026 LearnWise AI</p>
+    </footer>
+
+</body>
+</html>

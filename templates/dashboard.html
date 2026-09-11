@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Dashboard - LearnWise AI</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+    <header>
+        <h1>LearnWise AI</h1>
+             <a href="{{ url_for('home') }}">Home</a>
+
+    </header>
+
+    <main>
+
+        <h2 class="dashboard-title">Welcome to your Dashboard</h2>
+
+        <p>Learn, practice, and improve with AI.</p>
+
+        <section class="dashboard-cards">
+
+            <div>
+                <h3>📄 Upload Study Material</h3>
+                <p>Upload your PDF and let AI understand your study material.</p>
+                <a href="{{ url_for('upload') }}">Upload PDF</a>
+            </div>
+
+            <div>
+                <h3>📚 Learn & Summary</h3>
+                <p>Get easy-to-understand explanations and summaries.</p>
+                <a href="{{ url_for('learn') }}">Start Learning</a>
+            </div>
+
+            <div>
+                <h3>💬 Ask AI</h3>
+                <p>Ask questions directly from your uploaded material.</p>
+                <a href="{{ url_for('ask_ai') }}">Ask AI</a>
+            </div>
+
+            <div>
+                <h3>📝 Quiz</h3>
+                <p>Generate MCQs and test your understanding.</p>
+                <a href="{{ url_for('quiz') }}">Take Quiz</a>
+            </div>
+
+            <div>
+                <h3>📊 Performance</h3>
+                <p>View your score and identify topics that need improvement.</p>
+                <a href="{{ url_for('performance') }}">View Performance</a>
+            </div>
+
+            <div>
+    <h3>🎯 Weak Topics</h3>
+    <p>
+        Identify topics where you need more practice
+        based on your quiz performance.
+    </p>
+    <a href="{{ url_for('weak_topics') }}">View Weak Topics</a>
+</div>
+
+            <div>
+                <h3>📅 Study Plan</h3>
+                <p>Get personalized revision recommendations and a study plan.</p>
+                <a href="{{ url_for('study_plan') }}">View Study Plan</a>
+            </div>
+            <div>
+    <h3>📈 History</h3>
+    <p>View your previous quiz attempts, scores, and learning progress.</p>
+    <a href="{{ url_for('history') }}">View History</a>
+</div>
+
+        </section>
+
+    </main>
+
+</body>
+
+</html>

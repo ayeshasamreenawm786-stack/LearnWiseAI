@@ -1,0 +1,57 @@
+[
+    {
+        "question": "What is the expanded form of ICT?",
+        "options": {
+            "A": "Information and Computer Technology",
+            "B": "Information and Communication Technology",
+            "C": "Internet and Communication Technology",
+            "D": "Integrated Computer Technique"
+        },
+        "answer": "B",
+        "topic": "Core Concepts"
+    },
+    {
+        "question": "Which of the following is an example of an input device?",
+        "options": {
+            "A": "Printer",
+            "B": "Monitor",
+            "C": "Scanner",
+            "D": "Speaker"
+        },
+        "answer": "C",
+        "topic": "Core Concepts"
+    },
+    {
+        "question": "Which software application is best suited for calculations and data analysis like a Marks Register?",
+        "options": {
+            "A": "MS Word",
+            "B": "MS Excel",
+            "C": "PowerPoint",
+            "D": "VLC Media Player"
+        },
+        "answer": "B",
+        "topic": "Digital Literacy"
+    },
+    {
+        "question": "What does OER stand for in educational resources?",
+        "options": {
+            "A": "Online Educational Records",
+            "B": "Open Educational Resources",
+            "C": "Official Educational References",
+            "D": "Open Exam Repository"
+        },
+        "answer": "B",
+        "topic": "Learning Platforms"
+    },
+    {
+        "question": "What is the primary role of a teacher when using ICT for collaborative and constructive learning?",
+        "options": {
+            "A": "Strict controller",
+            "B": "Facilitator",
+            "C": "Data entry operator",
+            "D": "Examiner"
+        },
+        "answer": "B",
+        "topic": "Classroom Integration"
+    }
+]

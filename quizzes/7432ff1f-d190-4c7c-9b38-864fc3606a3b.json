@@ -1,0 +1,57 @@
+[
+    {
+        "question": "What is the primary function of MS Excel according to the study material?",
+        "options": {
+            "A": "Document Preparation",
+            "B": "Marks Calculation",
+            "C": "Presentation",
+            "D": "Web Browsing"
+        },
+        "answer": "B",
+        "topic": "Digital Literacy"
+    },
+    {
+        "question": "Which of the following is considered an input device?",
+        "options": {
+            "A": "Monitor",
+            "B": "Printer",
+            "C": "Scanner",
+            "D": "Speaker"
+        },
+        "answer": "C",
+        "topic": "Core Concepts"
+    },
+    {
+        "question": "What does DIKSHA stand for in the context of learning platforms?",
+        "options": {
+            "A": "National Digital Education Platform",
+            "B": "Massive Open Online Course",
+            "C": "Open Educational Resources",
+            "D": "Continuous Comprehensive Evaluation"
+        },
+        "answer": "A",
+        "topic": "Learning Platforms"
+    },
+    {
+        "question": "What is the role of a teacher in ICT-supported and collaborative learning?",
+        "options": {
+            "A": "Strict Disciplinarian",
+            "B": "Facilitator",
+            "C": "Data Analyst",
+            "D": "Programmer"
+        },
+        "answer": "B",
+        "topic": "Classroom Integration"
+    },
+    {
+        "question": "What does Phishing refer to in cyber safety and ethics?",
+        "options": {
+            "A": "Using free educational software",
+            "B": "Creating strong passwords",
+            "C": "Stealing information through fake messages",
+            "D": "Sharing copyright-free images"
+        },
+        "answer": "C",
+        "topic": "Safety & Ethics"
+    }
+]

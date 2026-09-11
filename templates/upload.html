@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Upload Study Material - LearnWise AI</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+    <header>
+        <h1>LearnWise AI</h1>
+        <a href="{{ url_for('dashboard') }}">Dashboard</a>
+    </header>
+
+    <main>
+
+        <h2>Upload Study Material</h2>
+
+        <p>Upload your PDF and let LearnWise AI understand your study material.</p>
+
+        <form method="POST" enctype="multipart/form-data">
+
+            <input type="file" name="pdf_file" accept=".pdf">
+
+            <br><br>
+
+            <button type="submit">Upload PDF</button>
+
+        </form>
+
+        {% if filename %}
+
+            <h3>Uploaded Study Material</h3>
+
+            <p>
+                📄
+                <a href="{{ url_for('uploaded_file', filename=filename) }}" target="_blank">
+                    {{ filename }}
+                </a>
+            </p>
+
+            <h3>Continue Learning</h3>
+
+            <div class="dashboard-cards">
+
+                <div>
+                    <a href="{{ url_for('learn') }}">
+                        <button>Learn & Summary</button>
+                    </a>
+                </div>
+
+                <div>
+                    <a href="{{ url_for('ask_ai') }}">
+                        <button>Ask AI</button>
+                    </a>
+                </div>
+
+                <div>
+                    <a href="{{ url_for('quiz') }}">
+                        <button>Quiz</button>
+                    </a>
+                </div>
+
+                <div>
+                    <a href="{{ url_for('performance') }}">
+                        <button>Performance</button>
+                    </a>
+                </div>
+
+                <div>
+                    <a href="{{ url_for('weak_topics') }}">
+                        <button>Weak Topics & Competency Gaps</button>
+                    </a>
+                </div>
+
+                <div>
+                    <a href="{{ url_for('study_plan') }}">
+                        <button>Study Plan</button>
+                    </a>
+                </div>
+
+            </div>
+
+        {% endif %}
+
+    </main>
+
+</body>
+
+</html>

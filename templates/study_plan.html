@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Study Plan - LearnWise AI</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+
+<body>
+
+    <header>
+        <h1>LearnWise AI</h1>
+        <a href="{{ url_for('dashboard') }}">Dashboard</a>
+    </header>
+    <main>
+
+    <h2>📅 Personalized Study Plan</h2>
+
+    {% if performance_data %}
+
+        <section>
+
+            <h3>📚 Revision Recommendations</h3>
+
+            {% if performance_data["ai_insights"] %}
+
+                {% for topic, insight in performance_data["ai_insights"].items() %}
+
+                    <h4>{{ topic }}</h4>
+
+                    <p>
+                        {{ insight["recommendation"] }}
+                    </p>
+
+                {% endfor %}
+
+            {% else %}
+
+                <p>No revision recommendations available yet.</p>
+
+            {% endif %}
+
+        </section>
+
+
+        <section>
+
+            <h3>🗓️ Study Schedule</h3>
+
+            <p>
+                Focus your study time on the topics identified from your
+                quiz performance.
+            </p>
+
+            {% for topic in performance_data["weak_topics"] %}
+
+                <p>
+                    🎯 Revise <strong>{{ topic }}</strong>
+                </p>
+
+            {% endfor %}
+
+        </section>
+
+
+        <section>
+
+            <h3>🎯 Practice Goals</h3>
+
+            {% if performance_data["weak_topics"] %}
+
+                {% for topic in performance_data["weak_topics"] %}
+
+                    <p>
+                        Practice questions related to
+                        <strong>{{ topic }}</strong>.
+                    </p>
+
+                {% endfor %}
+
+            {% else %}
+
+                <p>
+                    No weak topics found. Continue practicing to maintain
+                    your performance.
+                </p>
+
+            {% endif %}
+
+        </section>
+
+    {% else %}
+
+        <p>
+            Take a quiz first to generate your personalized study plan.
+        </p>
+
+    {% endif %}
+
+</main>
+
+</body>
+
+</html>

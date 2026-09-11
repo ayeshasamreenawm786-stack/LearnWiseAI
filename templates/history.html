@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>History - LearnWise AI</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<header>
+
+    <h1>LearnWise AI</h1>
+
+    {% if selected_material %}
+        <a href="{{ url_for('history') }}">← Back to History</a>
+    {% else %}
+        <a href="{{ url_for('dashboard') }}">Dashboard</a>
+    {% endif %}
+
+</header>
+
+
+<main>
+
+{% if selected_material %}
+
+    <!-- SELECTED PDF HISTORY -->
+
+    <h2>📄 {{ selected_material["filename"] }}</h2>
+
+    <p>
+        📅 Uploaded:
+        {{ selected_material["created_at"] }}
+    </p>
+
+    <hr>
+
+
+    <!-- SUMMARY -->
+
+    <h3>📚 Summary</h3>
+
+    {% if selected_material["summary"] %}
+
+        <div>
+            {{ selected_material["summary"] | safe }}
+        </div>
+
+    {% else %}
+
+        <p>No summary available.</p>
+
+    {% endif %}
+
+
+    <hr>
+
+
+    <!-- ASK AI HISTORY -->
+
+    <h3>💬 Ask AI History</h3>
+
+    {% if selected_material["questions"] %}
+
+        {% for item in selected_material["questions"] %}
+
+            <div>
+
+                <p>
+                    <strong>Question:</strong>
+                    {{ item["question"] }}
+                </p>
+
+                <p>
+                    <strong>Answer:</strong>
+                    {{ item["answer"] | safe }}
+                </p>
+
+                <p>
+                    📅 {{ item["created_at"] }}
+                </p>
+
+            </div>
+
+            <hr>
+
+        {% endfor %}
+
+    {% else %}
+
+        <p>No Ask AI questions yet.</p>
+
+    {% endif %}
+
+
+{% else %}
+
+    <!-- MAIN HISTORY PAGE -->
+
+    <h2>📈 Learning History</h2>
+
+    {% if materials %}
+
+        {% for material in materials %}
+
+            <div>
+
+                <h3>
+                    <a href="{{ url_for(
+                        'material_history',
+                        material_id=material['id']
+                    ) }}">
+                        📄 {{ material["filename"] }}
+                    </a>
+                </h3>
+<form action="{{ url_for('delete_history', material_id=material['id']) }}"
+      method="POST"
+      onsubmit="return confirm('Delete this PDF and all its history?');">
+
+    <button type="submit">🗑️ Delete</button>
+
+</form>
+                <p>
+                    📅 Uploaded:
+                    {{ material["created_at"] }}
+                </p>
+
+            </div>
+
+            <hr>
+
+        {% endfor %}
+
+    {% else %}
+
+        <p>No study materials found yet.</p>
+
+    {% endif %}
+
+{% endif %}
+
+</main>
+
+</body>
+
+</html>

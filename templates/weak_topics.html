@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Weak Topics - LearnWise AI</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+
+<body>
+
+    <header>
+        <h1>LearnWise AI</h1>
+        <a href="{{ url_for('dashboard') }}">Dashboard</a>
+    </header>
+
+    <main>
+
+    <h2>🎯 Weak Topics & Competency Gaps</h2>
+
+    {% if performance_data %}
+
+        {% if performance_data["weak_topics"] %}
+
+            {% for topic in performance_data["weak_topics"] %}
+
+                <section>
+
+                    <h3>{{ topic }}</h3>
+
+                    <p>
+                        Performance:
+                        {{ performance_data["topic_scores"][topic]["percentage"] }}%
+                    </p>
+
+                    {% if performance_data["ai_insights"].get(topic) %}
+
+                        <h4>Competency Gap</h4>
+
+                        <p>
+                            {{ performance_data["ai_insights"][topic]["competency_gap"] }}
+                        </p>
+
+                        <h4>Recommendation</h4>
+
+                        <p>
+                            {{ performance_data["ai_insights"][topic]["recommendation"] }}
+                        </p>
+
+                    {% endif %}
+
+                </section>
+
+            {% endfor %}
+
+        {% else %}
+
+            <p>No weak topics found. Keep up the good work!</p>
+
+        {% endif %}
+
+    {% else %}
+
+        <p>No quiz performance available yet. Take a quiz first.</p>
+
+    {% endif %}
+
+</main>
+
+</body>
+
+</html>

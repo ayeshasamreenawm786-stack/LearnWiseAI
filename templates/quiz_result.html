@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Quiz Result - LearnWise AI</title>
+<a href="{{ url_for('quiz') }}">← Back to Quiz</a>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            background-color: #f5f7fb;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: auto;
+        }
+
+        .score-box,
+        .question-box {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        a {
+            display: inline-block;
+            margin-top: 10px;
+            margin-right: 10px;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>Quiz Result</h1>
+
+    <div class="score-box">
+
+        <h2>Score: {{ correct_count }} / {{ results|length }}</h2>
+
+        <h2>Percentage: {{ overall_percentage }}%</h2>
+
+        <a href="{{ url_for('performance') }}">
+            View Performance
+        </a>
+
+        <a href="{{ url_for('weak_topics') }}">
+            View Weak Topics
+        </a>
+
+    </div>
+
+
+    <h2>Question Results</h2>
+
+    {% for result in results %}
+
+        <div class="question-box">
+
+            <h3>
+                {{ loop.index }}. {{ result.question }}
+            </h3>
+
+            <p>
+                Your Answer: {{ result.student_answer }}
+            </p>
+
+            <p>
+                Correct Answer: {{ result.correct_answer }}
+            </p>
+
+            <p>
+                Result: {{ result.result }}
+            </p>
+
+        </div>
+
+    {% endfor %}
+
+
+    <a href="{{ url_for('quiz') }}">
+        Take Quiz Again
+    </a>
+
+</div>
+
+</body>
+
+</html>

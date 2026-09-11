@@ -1,0 +1,112 @@
+[
+    {
+        "question": "What does ICT stand for?",
+        "options": {
+            "A": "Information and Computer Technology",
+            "B": "Information and Communication Technology",
+            "C": "Internet and Communication Technology",
+            "D": "Integrated Computer Teaching"
+        },
+        "answer": "B",
+        "topic": "Core Concepts"
+    },
+    {
+        "question": "Which of the following is an example of an input device?",
+        "options": {
+            "A": "Printer",
+            "B": "Monitor",
+            "C": "Scanner",
+            "D": "Speaker"
+        },
+        "answer": "C",
+        "topic": "Core Concepts"
+    },
+    {
+        "question": "Which software is primarily used for calculations and data analysis?",
+        "options": {
+            "A": "MS Word",
+            "B": "MS Excel",
+            "C": "PowerPoint",
+            "D": "VLC Media Player"
+        },
+        "answer": "B",
+        "topic": "Digital Literacy"
+    },
+    {
+        "question": "What is DIKSHA primarily used for?",
+        "options": {
+            "A": "Spreadsheet calculations",
+            "B": "Teacher training and digital content",
+            "C": "Video conferencing only",
+            "D": "Drawing and animation"
+        },
+        "answer": "B",
+        "topic": "Learning Platforms"
+    },
+    {
+        "question": "What does OER stand for?",
+        "options": {
+            "A": "Online Educational Records",
+            "B": "Open Educational Resources",
+            "C": "Official Examination Results",
+            "D": "Open Electronic Resources"
+        },
+        "answer": "B",
+        "topic": "Learning Platforms"
+    },
+    {
+        "question": "What is the role of a teacher in an ICT-supported classroom?",
+        "options": {
+            "A": "Facilitator",
+            "B": "Strict controller",
+            "C": "Observer only",
+            "D": "Lecture reader"
+        },
+        "answer": "A",
+        "topic": "Classroom Integration"
+    },
+    {
+        "question": "What does CCE stand for in education?",
+        "options": {
+            "A": "Computer Content Evaluation",
+            "B": "Continuous Comprehensive Evaluation",
+            "C": "Core Curriculum Examination",
+            "D": "Classroom Computer Environment"
+        },
+        "answer": "B",
+        "topic": "Assessment & Evaluation"
+    },
+    {
+        "question": "What does Phishing refer to?",
+        "options": {
+            "A": "Playing online games",
+            "B": "Creating digital presentations",
+            "C": "Online fraud through fake messages to steal information",
+            "D": "Designing educational software"
+        },
+        "answer": "C",
+        "topic": "Safety & Ethics"
+    },
+    {
+        "question": "Which device is considered an output device?",
+        "options": {
+            "A": "Keyboard",
+            "B": "Mouse",
+            "C": "Scanner",
+            "D": "Projector"
+        },
+        "answer": "D",
+        "topic": "Device Handling"
+    },
+    {
+        "question": "What is the function of PowerPoint?",
+        "options": {
+            "A": "Word processing",
+            "B": "Presentations",
+            "C": "Database management",
+            "D": "Email communication"
+        },
+        "answer": "B",
+        "topic": "Digital Literacy"
+    }
+]

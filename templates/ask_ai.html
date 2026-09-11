@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Ask AI - LearnWise AI</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+    <header>
+        <h1>LearnWise AI</h1>
+        <a href="{{ url_for('dashboard') }}">Dashboard</a>
+    </header>
+
+    <main>
+
+        <h2>Ask AI</h2>
+
+        <p>Ask a question about your uploaded study material.</p>
+
+        <form method="POST">
+
+            <input
+                type="text"
+                name="question"
+                placeholder="Ask your question..."
+                required
+            >
+
+            <button type="submit">Ask AI</button>
+
+        </form>
+
+        {% if ai_answer %}
+
+            <h3>AI Answer</h3>
+
+            <div class="ai-content">
+                {{ ai_answer }}
+            </div>
+
+        {% endif %}
+
+    </main>
+
+</body>
+
+</html>

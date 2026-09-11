@@ -1,0 +1,57 @@
+[
+    {
+        "question": "What does the acronym CPU stand for, and what is its primary role according to the study material?",
+        "options": {
+            "A": "Central Processing Unit - Brain of Computer",
+            "B": "Common Processing Utility - Browser of Computer",
+            "C": "Central Program Utility - Base of Computer",
+            "D": "Computer Processing Unit - Brain of Calculator"
+        },
+        "answer": "A",
+        "topic": "Core Concepts"
+    },
+    {
+        "question": "Which of the following formulas is associated with MS Excel for calculations as listed in the study material?",
+        "options": {
+            "A": "DOCUMENT()",
+            "B": "PRESENTATION()",
+            "C": "SUM()",
+            "D": "SLIDE()"
+        },
+        "answer": "C",
+        "topic": "Digital Literacy"
+    },
+    {
+        "question": "What does MOOC stand for in the context of learning platforms?",
+        "options": {
+            "A": "Massive Open Online Courses",
+            "B": "Mobile Open Online Content",
+            "C": "Multiple Online Open Classes",
+            "D": "Mainstream Online Open Computer"
+        },
+        "answer": "A",
+        "topic": "Learning Platforms"
+    },
+    {
+        "question": "According to the study material, what is the role of a teacher when using ICT for collaborative learning?",
+        "options": {
+            "A": "Strict Inspector",
+            "B": "Facilitator",
+            "C": "Only a Lecturer",
+            "D": "External Observer"
+        },
+        "answer": "B",
+        "topic": "Classroom Integration"
+    },
+    {
+        "question": "What is defined in the safety and ethics section as stealing information through fake messages?",
+        "options": {
+            "A": "Phishing",
+            "B": "Plagiarism",
+            "C": "Freeware",
+            "D": "Formatting"
+        },
+        "answer": "A",
+        "topic": "Safety & Ethics"
+    }
+]

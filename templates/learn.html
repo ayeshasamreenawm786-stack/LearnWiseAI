@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Learn & Summary - LearnWise AI</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+    <header>
+        <h1>LearnWise AI</h1>
+        <a href="{{ url_for('dashboard') }}">Dashboard</a>
+    </header>
+
+    <main>
+
+        <h2>Learn & Summary</h2>
+
+        <p>Study your uploaded material using an AI-generated summary.</p>
+
+        <div class="ai-content">
+            {{ ai_response }}
+        </div>
+
+        <br>
+
+        <a href="{{ url_for('ask_ai') }}">
+            <button>Ask AI</button>
+        </a>
+
+        <a href="{{ url_for('quiz') }}">
+            <button>Take Quiz</button>
+        </a>
+
+    </main>
+
+</body>
+
+</html>

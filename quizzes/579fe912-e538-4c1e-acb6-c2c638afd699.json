@@ -1,0 +1,57 @@
+[
+    {
+        "question": "What is the primary function of MS Excel based on the study material?",
+        "options": {
+            "A": "Document preparation",
+            "B": "Calculations and Marks Register",
+            "C": "Creating presentations",
+            "D": "Browsing the internet"
+        },
+        "answer": "B",
+        "topic": "Digital Literacy"
+    },
+    {
+        "question": "Which of the following is considered an Input Device?",
+        "options": {
+            "A": "Monitor",
+            "B": "Printer",
+            "C": "Scanner",
+            "D": "Speaker"
+        },
+        "answer": "C",
+        "topic": "Core Concepts"
+    },
+    {
+        "question": "What does DIKSHA stand for in the context of learning platforms?",
+        "options": {
+            "A": "Digital Information Knowledge Sharing Hub Application",
+            "B": "A teacher training and national digital education platform",
+            "C": "Digital Internet Knowledge System for Higher Academy",
+            "D": "Data Integration and Knowledge Sharing Hardware Architecture"
+        },
+        "answer": "B",
+        "topic": "Learning Platforms"
+    },
+    {
+        "question": "What is the role of a teacher when using ICT for collaborative learning?",
+        "options": {
+            "A": "Facilitator, Guide, and Mentor",
+            "B": "Strict examiner only",
+            "C": "Data entry operator",
+            "D": "Software developer"
+        },
+        "answer": "A",
+        "topic": "Classroom Integration"
+    },
+    {
+        "question": "What does CCE stand for in assessment and evaluation?",
+        "options": {
+            "A": "Computer Centered Education",
+            "B": "Continuous Comprehensive Evaluation",
+            "C": "Core Curriculum Examination",
+            "D": "Creative Computer Evaluation"
+        },
+        "answer": "B",
+        "topic": "Assessment & Evaluation"
+    }
+]
